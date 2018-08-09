@@ -1,5 +1,6 @@
-package com.penta.games.julienbamsoundboard;
+package com.greenwoods.productions.julienbamsoundboard;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -11,6 +12,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
@@ -109,18 +111,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                if (menuItem.getItemId() == R.id.nav_item_inbox) {
-                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.containerView,new SentFragment()).commit();
-
-                }
-
-
                 if(menuItem.getItemId() == R.id.teilen){
                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
                     shareIntent.setType("text/plain");
-                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "✶Julien Bam Soundboard✶");
-                    shareIntent.putExtra(Intent.EXTRA_TEXT, "✶Hol dir das Julien Bam Soundboard mit Julien's besten Sprüchen✶\n\nhttps://play.google.com/store/apps/details?id=com.penta.games.julienbamsoundboard&hl=de");
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.greenwoods.productions.julienbamsoundboard");
                     startActivity(Intent.createChooser(shareIntent,  "Teilen über..."));
                 }
 
@@ -130,120 +124,21 @@ public class MainActivity extends AppCompatActivity {
                     xfragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
                 }
 
-                if (menuItem.getItemId() == R.id.instagram) {
-                    String url = "https://instagram.com/_u/coding.empire/?r=sun1";
 
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.flappyjulien) {
-                    String url = "https://play.google.com/store/apps/details?id=com.pentagames.flappyjulien.android&hl=de";
 
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.flappybibi) {
-                    String url = "https://play.google.com/store/apps/details?id=com.pentagames.flappybibi.android&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.bibisepilierer) {
-                    String url = "https://play.google.com/store/apps/details?id=com.jakob2000.bibisepilierer&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.miimii) {
-                    String url = "https://play.google.com/store/apps/details?id=com.aaron.waller.miimiisoundboard&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.simondesue) {
-                    String url = "https://play.google.com/store/apps/details?id=com.aaron.waller.simondesuesoundboard&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-
-                if (menuItem.getItemId() == R.id.elotrix) {
-                    String url = "https://play.google.com/store/apps/details?id=com.penta.games.elotrixsoundboard&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.gronkh) {
-                    String url = "https://play.google.com/store/apps/details?id=com.aaron.waller.gronkhsoundboard&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.tanzverbot) {
-                    String url = "https://play.google.com/store/apps/details?id=com.aaron.waller.tanzverbotsoundboard&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.merkel) {
-                    String url = "https://play.google.com/store/apps/details?id=com.aaron.waller.angelasoundboard&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-
-                if (menuItem.getItemId() == R.id.freshtorge) {
-                    String url = "https://play.google.com/store/apps/details?id=com.penta.games.freshtorgesoundboard&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.dummefage) {
-                    String url = "https://play.google.com/store/apps/details?id=com.penta.games.dummefragenet&hl=de";
-
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    onPause();
-                    startActivity(intent);
-                }
-                if (menuItem.getItemId() == R.id.email) {
-                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                            "mailto","pentagames.business@gmail.com", null));;
-                    startActivity(Intent.createChooser(emailIntent, "E-Mail senden..."));
+                if (menuItem.getItemId() == R.id.rechtliches) {
+                    AlertDialog.Builder a_builder = new AlertDialog.Builder(MainActivity.this);
+                    a_builder.setMessage(R.string.rechtliches)
+                            .setCancelable(true)
+                            .setNegativeButton("Verstanden", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int i) {
+                                    dialog.cancel();
+                                }
+                            });
+                    AlertDialog alert = a_builder.create();
+                    alert.setTitle("Impressum");
+                    alert.show();
                 }
 
 

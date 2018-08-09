@@ -1,4 +1,4 @@
-package com.penta.games.julienbamsoundboard.tabs;
+package com.greenwoods.productions.julienbamsoundboard.tabs;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,8 +17,8 @@ import android.widget.GridView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.penta.games.julienbamsoundboard.MainActivity;
-import com.penta.games.julienbamsoundboard.R;
+import com.greenwoods.productions.julienbamsoundboard.MainActivity;
+import com.greenwoods.productions.julienbamsoundboard.R;
 
 import java.io.File;
 import java.io.FileOutputStream;

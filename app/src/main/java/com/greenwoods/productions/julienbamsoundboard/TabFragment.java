@@ -1,4 +1,4 @@
-package com.penta.games.julienbamsoundboard;
+package com.greenwoods.productions.julienbamsoundboard;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,9 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.penta.games.julienbamsoundboard.tabs.Toast;
-import com.penta.games.julienbamsoundboard.tabs.Lustig;
-import com.penta.games.julienbamsoundboard.tabs.Kommentare;
+import com.greenwoods.productions.julienbamsoundboard.tabs.Toast;
+import com.greenwoods.productions.julienbamsoundboard.tabs.Lustig;
+import com.greenwoods.productions.julienbamsoundboard.tabs.Kommentare;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;

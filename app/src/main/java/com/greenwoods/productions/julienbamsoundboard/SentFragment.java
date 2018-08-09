@@ -1,4 +1,4 @@
-package com.penta.games.julienbamsoundboard;
+package com.greenwoods.productions.julienbamsoundboard;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

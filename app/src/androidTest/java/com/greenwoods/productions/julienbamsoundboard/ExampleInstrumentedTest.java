@@ -1,4 +1,4 @@
-package com.penta.games.julienbamsoundboard;
+package com.greenwoods.productions.julienbamsoundboard;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
