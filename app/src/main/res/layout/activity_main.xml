@@ -35,8 +35,6 @@
             android:layout_height="match_parent"
             android:id="@+id/containerView">
 
-
-
             <com.google.android.gms.ads.AdView
                 android:id="@+id/adView"
                 android:layout_width="wrap_content"

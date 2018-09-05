@@ -1,5 +1,5 @@
 package com.greenwoods.productions.julienbamsoundboard;
-
+//stand 5.9.
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final File FILES_PATH = new File(Environment.getExternalStorageDirectory(), "Android/data/com.aaron.waller.miimiisoundboard/files");
+        final File FILES_PATH = new File(Environment.getExternalStorageDirectory(), "Android/data/com.greenwoods.productions.julienbamsoundboard/files");
 
 
         if (Environment.MEDIA_MOUNTED.equals(

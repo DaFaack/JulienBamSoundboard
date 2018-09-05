@@ -7,16 +7,7 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context="com.greenwoods.productions.julienbamsoundboard.MainActivity">
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        ads:adSize="SMART_BANNER"
-        android:layout_gravity="bottom|end"
-        ads:adUnitId="@string/banner_ad_unit_id">
-    </com.google.android.gms.ads.AdView>
+
     <GridView
         android:background="#ffffff"
         android:layout_width="wrap_content"
@@ -27,7 +18,6 @@
         android:numColumns="auto_fit"
         android:horizontalSpacing="0dp"
         android:verticalSpacing="0dp"
-        android:layout_marginBottom="50dp"
         android:columnWidth="155dp"
         android:stretchMode="spacingWidthUniform"/>
 

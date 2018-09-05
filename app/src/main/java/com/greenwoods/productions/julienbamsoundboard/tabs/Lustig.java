@@ -44,10 +44,6 @@ public class Lustig extends Fragment{
 
 
 
-        AdView mAdView = (AdView) rootView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
 
         myGridView = (GridView)rootView.findViewById(R.id.sandraGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items2));

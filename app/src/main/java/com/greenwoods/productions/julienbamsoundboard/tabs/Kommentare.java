@@ -44,9 +44,7 @@ public class Kommentare extends Fragment {
         View rootView=inflater.inflate(R.layout.kommentare,container,false);
 
 
-        AdView mAdView = (AdView) rootView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+
 
 
         myGridView = (GridView)rootView.findViewById(R.id.torgeGridView);

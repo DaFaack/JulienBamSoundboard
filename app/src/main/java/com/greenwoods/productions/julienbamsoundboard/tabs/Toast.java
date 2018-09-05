@@ -39,9 +39,7 @@ public class Toast extends Fragment {
         View rootView=inflater.inflate(R.layout.toast,container,false);
 
 
-        AdView mAdView = (AdView) rootView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+
 
         myGridView = (GridView)rootView.findViewById(R.id.lexaGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items3));
